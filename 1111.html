@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<head runat="server">
+    <title>无标题页</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="css/admin_top.css" rel="stylesheet"/>
+     <link href="css/bootstrap-theme.css" rel="stylesheet"/>
+      <script type="text/javascript" src="js/move2.js"></script>
+
+</head>
+<body>
+
+<div class="outside">
+        <div class="top" >
+        	<div style="float:left">视频之家后台管理</div>
+        	<div id="top_time" style="float:left; margin:0 auto; margin-left:200px;">
+             <img class="num" src="time_pic/0.png" alt="0" />
+             <img class="num" src="time_pic/0.png" alt="0" />
+             <img src="time_pic/sign.png" alt="sign" />
+             <img class="num" src="time_pic/0.png" alt="0" />
+             <img class="num" src="time_pic/0.png" alt="0" />
+             <img src="time_pic/sign.png" alt="sign" />
+             <img class="num" src="time_pic/0.png" alt="0" />
+             <img class="num" src="time_pic/0.png" alt="0" />
+            </div>
+        <%=loginName %>
+        </div>
+        <div id="sidebar" class="nav-collapse ">
+              <!-- sidebar menu start-->
+              <ul class="sidebar-menu">                
+               
+				  <li class="sub-menu" style="border-top: 1px solid #D7D7D7;">
+                      <a href="main.aspx" class="">
+                      后台管理首页
+                      </a>
+                  </li>       
+                  <li class="sub-menu">
+                      <a href="sortManage.aspx"class="">
+                      类别管理
+                      </a>
+                      
+                  </li>
+                  <li id="oLi">
+                      <a class="" href="#">
+                          电影管理
+                      </a>
+                  </li>
+                  <ul id="oUl" style="opacity:0; width:0px; height:0px;" >
+                  <li>
+                      <a style="border-left: 1px solid #D7D7D7;" class="" href="#">
+                          上传视频
+                      </a>
+                  </li>
+                  <li>                     
+                      <a style="border-left: 1px solid #D7D7D7; border-bottom:none;" class="" href="#">
+                          电影编辑
+                          
+                      </a>
+                                         
+                  </li>
+                  </ul>
+                  <li>                     
+                      <a style="border-top: 1px solid #D7D7D7;" class="" href="#">
+                         用户管理
+                          
+                      </a>
+                                         
+                  </li>
+                    <ul>
+                    <%=outli %>
+                    </ul>
+                  
+              </ul>
+              <!-- sidebar menu end-->
+  </div>
+          
+  <div class="content" align="center">
+ 	<p style=" margin:15px 0;">
+           <select class="select" name="types">
+                        <option selected="selected">电影类型</option>
+    </select>
+    <input name="" type="text"  style=" width:300px;"/>
+                      <a>搜索</a>
+                      <a>上传视频</a>
+                      <a>批量删除</a>
+                      <p>
+<table  border="1">
+  <tr>
+    <th height="35px" style="border:none; width:50px;">选中</th>
+    <th width="120px">电影名称</th>
+    <th>电影封面</th><th width="100px;">电影类别</th><th width="180px">上传时间</th><th width="180px">操作</th>
+  </tr>
+  <tr>
+    <td><input name="" type="checkbox" value="" /></td>
+    <td>$100</td>
+    <td style="padding:8px;"><img src="images/slide4.jpg" width="150" height="100" /></td>
+    <td>$100</td>
+    <td>January</td>
+    <td><a>修改</a><a>删除</a></td>
+  </tr>
+</table>
+
+</div>
+ </div>
+
+          </div>
+
+
+
+       
+
+</body>
+<script>
+window.onload=function ()
+{
+	debugger
+	var aLi=document.getElementById('oLi');
+	var aUl=document.getElementById('oUl');
+	var aaa=0;
+	
+	aLi.onclick=function ()
+	{
+		if(aaa==0)
+		{
+			startMove(aUl, {width: 180, height: 102, opacity: 100});
+			aaa=1;
+		}
+		else
+		{
+			startMove(aUl, {width: 0, height: 0, opacity: 0});
+			aaa=0;
+		}
+
+		
+		
+	};
+};
+
+</script>
+</html>

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "H:\13_16ChenNan_19WangKeDi_MovieHome\", ".", "{68D2E23A-E0B0-4031-8E03-4435BA806C6B}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.VirtualPath = "/13_16ChenNan_19WangKeDi_MovieHome"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\..\..\桌面\13_16ChenNan_19WangKeDi_MovieHome\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\13_16ChenNan_19WangKeDi_MovieHome\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/13_16ChenNan_19WangKeDi_MovieHome"
+		Release.AspNetCompiler.PhysicalPath = "..\..\..\..\桌面\13_16ChenNan_19WangKeDi_MovieHome\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\13_16ChenNan_19WangKeDi_MovieHome\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "4672"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68D2E23A-E0B0-4031-8E03-4435BA806C6B}.Debug|.NET.ActiveCfg = Debug|.NET
+		{68D2E23A-E0B0-4031-8E03-4435BA806C6B}.Debug|.NET.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,141 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ADMINmaster.master.cs" Inherits="ADMINmaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>无标题页</title>
+
+
+<script type="text/javascript" src="../js/nicEdit.js"></script> 
+<script type="text/javascript">
+	bkLib.onDomLoaded(function() { nicEditors.allTextAreas() });
+</script>
+  </script>
+    <link href="css/admin_top.css" rel="stylesheet"/>
+     <link href="css/bootstrap-theme.css" rel="stylesheet"/>
+      <script type="text/javascript" src="../js/time_js.js"></script>
+      <script type="text/javascript" src="../js/move2.js"></script>
+      <script src="../js/jquery.js"></script>
+</head>
+<body>
+
+<div class="outside">
+        <div class="top" >
+        	<div style="float:left">视频之家后台管理</div>
+        	<div id="top_time" style="float:left; margin:0 auto; margin-left:200px;">
+             <img class="num" src="../time_pic/0.png" alt="0" />
+             <img class="num" src="../time_pic/0.png" alt="0" />
+             <img src="../time_pic/sign.png" alt="sign" />
+             <img class="num" src="../time_pic/0.png" alt="0" />
+             <img class="num" src="../time_pic/0.png" alt="0" />
+             <img src="../time_pic/sign.png" alt="sign" />
+             <img class="num" src="../time_pic/0.png" alt="0" />
+             <img class="num" src="../time_pic/0.png" alt="0" />
+            </div>
+        <%=loginName %>
+        
+        </div>
+        <div id="sidebar" class="nav-collapse " >
+              <!-- sidebar menu start-->
+              <ul class="sidebar-menu">                
+               
+				  <li class="sub-menu" style="border-top: 1px solid #D7D7D7;">
+                      <a href="main.aspx" class="">
+                      后台管理首页
+                      </a>
+                      
+                  </li>       
+                  <li class="sub-menu">
+                      <a href="sortManage.aspx"class="">
+                      类别管理
+                      </a>
+                      
+                  </li>
+                  <li id="oLi">
+                      <a class="" href="#">
+                          电影管理
+                      </a>
+                  <ul id="oUl" style="opacity:0; width:0px; height:0px;">
+                  <li>
+                      <a style="border-left: 1px solid #D7D7D7;" class="" href="videoupload.aspx">
+                          上传视频
+                      </a>
+                  </li>
+                  <li>                     
+                      <a style="border-left: 1px solid #D7D7D7; border-bottom:none;" class="" href="movieEdit.aspx">
+                          电影编辑
+                          
+                      </a>
+                                         
+                  </li>
+                  </ul>
+                  
+                    <%=outli %>
+                  </li>
+                  <li style="border-top: 1px solid #D7D7D7;">
+                    <a href="../loginAdmin.html">安全退出</a>
+                  </li>
+                    
+                  
+              </ul>
+              <!-- sidebar menu end-->
+          </div>
+          
+           <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+             </asp:contentplaceholder>
+
+
+          </div>
+
+
+
+       
+
+</body>
+<script>
+
+	var aLi=document.getElementById('oLi');
+	var aUl=document.getElementById('oUl');
+	var aaa=0;
+	var bbb=0;
+	aLi.onclick=function ()
+	{
+		if(aaa==0)
+		{
+			startMove(aUl, {width: 180, height: 102, opacity: 100});
+			aaa=1;
+		}
+		else
+		{
+			startMove(aUl, {width: 0, height: 0, opacity: 0});
+			aaa=0;
+		}
+	};
+	
+	
+	
+	
+	
+	var aLi2=document.getElementById('oLi2');
+	var aUl2=document.getElementById('oUl2');
+	
+	aLi2.onclick=function ()
+	{
+	    if(bbb==0){
+		    startMove(aUl2, {width: 180, height: 153, opacity: 100});
+		    bbb=1;
+		}
+		else
+		{
+			startMove(aUl2, {width: 0, height: 0, opacity: 0});
+			bbb=0;		    
+		}
+		
+	};
+
+
+
+
+</script>
+</html>
